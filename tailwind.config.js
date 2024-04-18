@@ -41,6 +41,9 @@ export default {
           900: "#b4aafe",
         },
       },
+      screens: {
+        xs: { max: "320px" },
+      },
     },
   },
   plugins: [],

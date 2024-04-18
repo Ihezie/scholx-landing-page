@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Dropdown = ({ setShowDropdown }) => {
   const container = {
     show: {
-      height: "auto",
+      scaleY: 1,
       transition: {
         type: "tween",
         staggerChildren: 0.1,
@@ -15,16 +15,13 @@ const Dropdown = ({ setShowDropdown }) => {
       transition: {
         type: "tween",
       },
-      height: 0,
+      scaleY: 0,
     },
   };
   const child = {
     show: {
       opacity: 1,
       y: 0,
-      transition: {
-        type: "tween",
-      },
     },
     hide: {
       opacity: 0,
@@ -49,12 +46,21 @@ const Dropdown = ({ setShowDropdown }) => {
         initial="hide"
         animate="show"
         exit="hide"
-        className="fixed top-[75px] bg-white z-50 w-full container-px rounded-b-2xl origin-top md:hidden"
+        className="fixed bg-french_blue z-40 w-full container-px rounded-b-[30px] origin-top pt-28 pb-6 md:hidden"
       >
-        <ul className="capitalize">
-          {navLinks.map(({ link }) => (
-            <motion.li variants={child} key={link}>
-              <a href={link}>{link}</a>
+        <ul className="capitalize text-white font-medium flex flex-col gap-3 items-center">
+          {navLinks.map((link) => (
+            <motion.li
+              onClick={() => {
+                setShowDropdown(false);
+              }}
+              className="relative"
+              variants={child}
+              key={link}
+            >
+              <a className="focus:text-black/80 hover:text-black/80" href={`#${link}`}>
+                {link}
+              </a>
             </motion.li>
           ))}
         </ul>
@@ -67,7 +73,7 @@ const Dropdown = ({ setShowDropdown }) => {
         onClick={() => {
           setShowDropdown(false);
         }}
-        className="z-30 fixed h-screen w-screen top-0 left-0 bg-black/65 backdrop-blur-sm md:hidden"
+        className="z-30 fixed h-screen w-screen top-0 left-0 backdrop-blur-md md:hidden"
       ></motion.div>
     </>
   );
