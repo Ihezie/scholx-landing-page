@@ -4,13 +4,20 @@ import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import { navLinks } from "../data";
+import { motion } from "framer-motion";
+import { fadeIn, slideIn } from "../framer-variants";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
     <>
-      <header className="absolute w-full top-12 container-px z-50">
+      <motion.header
+        variants={slideIn}
+        initial="hide"
+        animate="show"
+        className="absolute w-full top-12 container-px z-50"
+      >
         <div className="logo mx-auto w-max md:hidden">SCHOLX</div>
         <nav className="hidden md:block">
           <ul className="flex justify-between items-center text-white capitalize font-medium">
@@ -40,7 +47,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faBars} color="white" />
           )}
         </button>
-      </header>
+      </motion.header>
       <AnimatePresence>
         {showDropdown && <Dropdown setShowDropdown={setShowDropdown} />}
       </AnimatePresence>
