@@ -58,7 +58,10 @@ const Dropdown = ({ setShowDropdown }) => {
               variants={child}
               key={link}
             >
-              <a className="focus:text-black/80 hover:text-black/80" href={`#${link}`}>
+              <a
+                className="focus:text-black/80 hover:text-black/80"
+                href={`#${link}`}
+              >
                 {link}
               </a>
             </motion.li>

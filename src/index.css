@@ -1,34 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+  }
   #root {
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
-    @apply lg:text-lg xl:text-xl;
+    @apply sm:text-lg lg:text-xl;
   }
-  html {
+  h1,
+  h2,
+  h3,
+  h4,
+  a {
     font-family: "Belanosima", sans-serif;
-    font-weight: 400;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-[40px] lg:text-5xl;
   }
 }
 @layer components {
   .logo {
-    @apply text-white text-3xl md:text-4xl xl:text-5xl;
+    @apply font-belanosima text-white text-3xl md:text-4xl xl:text-5xl;
   }
   .container-px {
-    @apply xs:px-3 px-7 sm:px-12 md:px-16 lg:px-20 xl:px-48;
+    @apply xs:px-3 px-7 sm:px-12 md:px-16 lg:px-28 xl:px-48;
   }
   .animated-underline {
     @apply after:content-[''] after:bg-white after:h-[3px] after:border-white after:w-2/3 after:absolute after:rounded after:left-1/2 after:bottom-[-5px] after:translate-x-[-50%] after:scale-x-0 hover:after:scale-x-100 after:my-transition lg:after:block;
   }
   .btn {
-    @apply py-3 px-11 rounded-full hover:scale-110 my-transition xl:px-14;
+    @apply font-belanosima py-3 px-11 rounded-full hover:scale-110 my-transition xl:px-14;
   }
 }
 @layer utilities {

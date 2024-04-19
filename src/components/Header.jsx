@@ -5,7 +5,7 @@ import { useState } from "react";
 import Dropdown from "./Dropdown";
 import { navLinks } from "../data";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn } from "../framer-variants";
+import { slideIn } from "../framer-variants";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);

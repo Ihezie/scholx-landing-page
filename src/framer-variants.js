@@ -22,6 +22,14 @@ export const slideIn = {
     opacity: 0,
   },
 };
+export const doNothing = {
+  show: {
+    opacity: 1,
+  },
+  hide: {
+    opacity: 1,
+  },
+};
 export const viewPortOptions = {
   once: true,
   amount: 0.2,

@@ -44,6 +44,10 @@ export default {
       screens: {
         xs: { max: "320px" },
       },
+      fontFamily: {
+        belanosima: ["Belanosima", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],
