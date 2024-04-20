@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Header from "./components/Header";
 import About from "./components/About";
+import KeyFeatures from "./components/KeyFeatures";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <KeyFeatures />
     </>
   );
 }

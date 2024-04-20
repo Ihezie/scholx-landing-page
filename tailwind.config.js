@@ -2,6 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      "md-lg": "840px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       colors: {
         french_blue: {
@@ -40,9 +48,6 @@ export default {
           800: "#6955fd",
           900: "#b4aafe",
         },
-      },
-      screens: {
-        xs: { max: "320px" },
       },
       fontFamily: {
         belanosima: ["Belanosima", "sans-serif"],

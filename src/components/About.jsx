@@ -10,6 +10,7 @@ import {
 const About = () => {
   return (
     <motion.section
+      id="about"
       variants={doNothing}
       initial="hide"
       whileInView="show"
@@ -17,7 +18,7 @@ const About = () => {
       transition={{
         staggerChildren: 0.4,
       }}
-      className="text-center mt-28 relative container-px xl:mt-36"
+      className="text-center section-mt relative container-px "
     >
       <motion.img
         variants={fadeIn}
@@ -25,9 +26,7 @@ const About = () => {
         src={blob}
         alt="blob"
       />
-      <motion.h2 variants={slideIn} id="about">
-        About Us
-      </motion.h2>
+      <motion.h2 variants={slideIn}>About Us</motion.h2>
       <motion.p variants={slideIn} className="mt-9">
         At ScholX, we believe in transforming the traditional classroom
         experience into an engaging and interactive journey. With cutting-edge

@@ -30,6 +30,15 @@ export const doNothing = {
     opacity: 1,
   },
 };
+export const popIn = {
+  show: {
+    scale: 1,
+  },
+  hide: {
+    scale: 0,
+  },
+};
+
 export const viewPortOptions = {
   once: true,
   amount: 0.2,

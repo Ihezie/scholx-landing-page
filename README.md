@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 Button focus colors
 Reexamine DROPDOWN!!!
 Remove unused fonts
+Add icon attribution
