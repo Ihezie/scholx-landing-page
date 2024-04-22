@@ -1,22 +1,24 @@
 import { motion } from "framer-motion";
-import { slideIn, popIn, viewPortOptions, doNothing } from "../framer-variants";
+import { fadeUp, popIn, viewPortOptions } from "../framer-variants";
 import { keyFeatures } from "../data";
 
 const KeyFeatures = () => {
   return (
-    <motion.section
+    <section
       className="text-center section-mt container-px"
-      id="key-features"
+      id="features"
     >
-      <motion.h2 variants={slideIn}>Key Features</motion.h2>
+      <motion.h2 viewport={viewPortOptions} initial="hide" whileInView="show" variants={fadeUp}>
+        Key Features
+      </motion.h2>
       <motion.section
-        variants={doNothing}
+        viewport={{...viewPortOptions, amount: .1}}
         transition={{
           staggerChildren: 0.1,
         }}
         initial="hide"
         whileInView="show"
-        className="grid grid-cols-1 gap-5 mt-9 justify-items-center sm:grid-cols-[max-content_max-content] sm:justify-center sm:gap-10 md-lg:grid-cols-[max-content_max-content_max-content] md-lg:gap-14 lg:grid-cols-12 lg:gap-4 lg:max-w-[900px] lg:mx-auto mb-10"
+        className="grid grid-cols-1 gap-5 justify-items-center sm:grid-cols-[max-content_max-content] sm:justify-center sm:gap-10 md-lg:grid-cols-[max-content_max-content_max-content] md-lg:gap-14 lg:grid-cols-12 lg:gap-4 lg:max-w-[900px] lg:mx-auto"
       >
         {keyFeatures.map(({ icon, feature }, index) => {
           let colSpan = "lg:!col-span-6";
@@ -35,7 +37,7 @@ const KeyFeatures = () => {
           );
         })}
       </motion.section>
-    </motion.section>
+    </section>
   );
 };
 export default KeyFeatures;

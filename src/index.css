@@ -25,7 +25,10 @@
     font-family: "Belanosima", sans-serif;
   }
   h2 {
-    @apply text-3xl sm:text-4xl md:text-[40px] lg:text-5xl;
+    @apply text-3xl mb-9 sm:text-4xl md:text-[40px] lg:text-5xl;
+  }
+  h3 {
+    @apply text-lg sm:text-xl lg:text-2xl;
   }
 }
 @layer components {
@@ -35,8 +38,8 @@
   .container-px {
     @apply max-[320px]:px-3 px-7 sm:px-12 md:px-16 lg:px-28 xl:px-48;
   }
-  .section-mt{
-    @apply mt-28 xl:mt-36
+  .section-mt {
+    @apply mt-28 xl:mt-36;
   }
   .animated-underline {
     @apply after:content-[''] after:bg-white after:h-[3px] after:border-white after:w-2/3 after:absolute after:rounded after:left-1/2 after:bottom-[-5px] after:translate-x-[-50%] after:scale-x-0 hover:after:scale-x-100 after:my-transition lg:after:block;

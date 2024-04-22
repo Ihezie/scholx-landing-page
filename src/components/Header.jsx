@@ -5,7 +5,7 @@ import { useState } from "react";
 import Dropdown from "./Dropdown";
 import { navLinks } from "../data";
 import { motion } from "framer-motion";
-import { slideIn } from "../framer-variants";
+import { fadeDown } from "../framer-variants";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        variants={slideIn}
+        variants={fadeDown}
         initial="hide"
         animate="show"
         className="absolute w-full top-12 container-px z-50"
