@@ -22,7 +22,7 @@ const CallToAction = () => {
           <h3 className="mb-4 italic">Are you a lecturer?</h3>
           <button
             type="button"
-            className="btn bg-[#E6042C] text-white w-[250px] sm:w-[270px] lg:w-72 xl:w-[310px]"
+            className="btn bg-cta-red text-white w-[250px] sm:w-[270px] lg:w-72 xl:w-[310px]"
           >
             Sign Up for Early Access
           </button>
@@ -31,7 +31,7 @@ const CallToAction = () => {
           <h3 className="mb-4 italic">Are you a student?</h3>
           <button
             type="button"
-            className="btn text-white bg-black w-[250px] sm:w-[270px] lg:w-72 xl:w-[310px]"
+            className="btn text-white bg-french_blue w-[250px] sm:w-[270px] lg:w-72 xl:w-[310px]"
           >
             Join the Waitlist
           </button>
@@ -58,7 +58,7 @@ const CallToAction = () => {
           }}
         />
         <button
-          className="btn bg-[#E6042C] mt-8 sm:absolute sm:right-0 sm:top-0 sm:mt-0 sm:h-full"
+          className="btn bg-cta-red mt-8 sm:absolute sm:right-0 sm:top-0 sm:mt-0 sm:h-full"
           type="submit"
         >
           Submit
