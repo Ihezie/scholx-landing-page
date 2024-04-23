@@ -1,7 +1,8 @@
 import { navLinks } from "../data";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClose } from "@fortawesome/free-solid-svg-icons";
+import closeIcon from "../assets/icons/cross.svg";
+
 
 const Dropdown = ({ setShowDropdown }) => {
   const container = {
@@ -59,9 +60,9 @@ const Dropdown = ({ setShowDropdown }) => {
             onClick={() => {
               setShowDropdown(false);
             }}
-            className="max-[320px]:right-3 block absolute right-7 top-1/2 -translate-y-1/2 text-[28px] sm:right-12"
+            className="max-[320px]:right-3 block absolute right-7 top-1/2 -translate-y-1/2 sm:right-12"
           >
-            <FontAwesomeIcon icon={faClose} className="text-white " />
+            <img className="w-5" src={closeIcon} alt="close-icon" />
           </button>
         </motion.header>
         <ul className="capitalize text-white font-medium flex flex-col gap-3 items-center mb-6">
@@ -74,10 +75,7 @@ const Dropdown = ({ setShowDropdown }) => {
               variants={child}
               key={link}
             >
-              <a
-                className="focus:text-black/80 hover:text-black/80"
-                href={`#${link}`}
-              >
+              <a className="animated-underline" href={`#${link}`}>
                 {link}
               </a>
             </motion.li>
@@ -92,7 +90,7 @@ const Dropdown = ({ setShowDropdown }) => {
         onClick={() => {
           setShowDropdown(false);
         }}
-        className="z-30 fixed h-screen w-screen top-0 left-0 backdrop-blur-md md:hidden"
+        className="z-30 fixed h-screen w-screen top-0 left-0 bg-black/70 md:hidden"
       ></motion.div>
     </>
   );

@@ -15,7 +15,7 @@ const CallToAction = () => {
     }
   };
   return (
-    <motion.section id="sign up" className="container-px text-center section-mt bg-gradient-to-r from-federal_blue to-french_blue text-white py-8 md:py-16 xl:mx-48 xl:rounded-[45px] xl:px-16 mb-10">
+    <motion.section id="sign up" className="container-px text-center section-mt bg-black text-white py-8 md:py-16 xl:mx-48 xl:rounded-[45px] xl:px-16">
       <h2>Be part of the future of African education</h2>
       <section className="flex flex-col gap-8 md:flex-row md:justify-center md:gap-[15%] md:mt-14">
         <div >
