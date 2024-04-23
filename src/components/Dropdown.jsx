@@ -1,8 +1,6 @@
 import { navLinks } from "../data";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import closeIcon from "../assets/icons/cross.svg";
-
 
 const Dropdown = ({ setShowDropdown }) => {
   const container = {

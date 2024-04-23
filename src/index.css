@@ -47,8 +47,8 @@
   .btn {
     @apply font-belanosima py-3 px-11 rounded-full hover:scale-110 my-transition xl:px-14;
   }
-  .fixed-header{
-    @apply fixed top-0 bg-white text-black py-6 shadow-lg
+  .fixed-header {
+    @apply fixed top-0 bg-white text-black py-6 shadow-lg;
   }
 }
 @layer utilities {

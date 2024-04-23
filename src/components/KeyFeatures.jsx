@@ -4,15 +4,17 @@ import { keyFeatures } from "../data";
 
 const KeyFeatures = () => {
   return (
-    <section
-      className="text-center section-mt container-px"
-      id="features"
-    >
-      <motion.h2 viewport={viewPortOptions} initial="hide" whileInView="show" variants={fadeUp}>
+    <section className="text-center section-mt container-px" id="features">
+      <motion.h2
+        viewport={viewPortOptions}
+        initial="hide"
+        whileInView="show"
+        variants={fadeUp}
+      >
         Key Features
       </motion.h2>
       <motion.section
-        viewport={{...viewPortOptions, amount: .1}}
+        viewport={{ ...viewPortOptions, amount: 0.1 }}
         transition={{
           staggerChildren: 0.1,
         }}

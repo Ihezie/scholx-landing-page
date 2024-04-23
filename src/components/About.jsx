@@ -1,11 +1,5 @@
-import blob from "../assets/blob-1.svg";
 import { motion } from "framer-motion";
-import {
-  fadeUp,
-  fadeIn,
-  viewPortOptions,
-  doNothing,
-} from "../framer-variants";
+import { fadeUp, viewPortOptions, doNothing } from "../framer-variants";
 
 const About = () => {
   return (
@@ -20,12 +14,6 @@ const About = () => {
       }}
       className="text-center section-mt relative container-px"
     >
-      {/* <motion.img
-        variants={fadeIn}
-        className="absolute -z-10 left-0 -top-10 sm:w-24 sm:-top-14 lg:w-32 xl:w-44"
-        src={blob}
-        alt="blob"
-      /> */}
       <motion.h2 variants={fadeUp}>About Us</motion.h2>
       <motion.p variants={fadeUp}>
         At ScholX, we believe in transforming the traditional classroom
