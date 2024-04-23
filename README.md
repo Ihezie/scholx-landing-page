@@ -11,3 +11,5 @@ Button focus colors
 Reexamine DROPDOWN!!!
 Remove unused fonts
 Add icon attribution
+Properly understand throttled function from [johnkavanagh](https://johnkavanagh.co.uk/articles/throttling-scroll-events-in-javascript/)
+Fix section headers being blocked out when navigating to them using the navbar

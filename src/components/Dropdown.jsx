@@ -1,10 +1,12 @@
 import { navLinks } from "../data";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 const Dropdown = ({ setShowDropdown }) => {
   const container = {
     show: {
-      scaleY: 1,
+      height: "auto",
       transition: {
         type: "tween",
         staggerChildren: 0.1,
@@ -15,7 +17,7 @@ const Dropdown = ({ setShowDropdown }) => {
       transition: {
         type: "tween",
       },
-      scaleY: 0,
+      height: 0,
     },
   };
   const child = {
@@ -46,9 +48,23 @@ const Dropdown = ({ setShowDropdown }) => {
         initial="hide"
         animate="show"
         exit="hide"
-        className="fixed bg-french_blue z-40 w-full container-px rounded-b-[30px] origin-top pt-28 pb-6 md:hidden"
+        className="fixed bg-french_blue z-50 w-full rounded-b-[30px] origin-top md:hidden"
       >
-        <ul className="capitalize text-white font-medium flex flex-col gap-3 items-center">
+        <motion.header
+          variants={child}
+          className="relative flex justify-center mt-12 mb-8"
+        >
+          <div className="logo">SCHOLX</div>
+          <button
+            onClick={() => {
+              setShowDropdown(false);
+            }}
+            className="max-[320px]:right-3 block absolute right-7 top-1/2 -translate-y-1/2 text-[28px] sm:right-12"
+          >
+            <FontAwesomeIcon icon={faClose} className="text-white " />
+          </button>
+        </motion.header>
+        <ul className="capitalize text-white font-medium flex flex-col gap-3 items-center mb-6">
           {navLinks.map((link) => (
             <motion.li
               onClick={() => {
