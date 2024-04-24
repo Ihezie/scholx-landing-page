@@ -49,7 +49,7 @@ export const popIn = {
     transition: {
       type: "spring",
       mass: .4,
-      stiffness: 200,
+      stiffness: 130,
     },
   },
   hide: {

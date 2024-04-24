@@ -12,7 +12,7 @@ const Hero = () => {
       variants={doNothing}
       initial="hide"
       animate="show"
-      className="h-screen min-h-[700px] bg-mobile-hero bg-no-repeat bg-cover bg-[40%_50%] container-px pt-36 text-center text-white sm:pt-44 md:min-h-[800px] md:bg-tablet-hero md:pt-56 xl:bg-desktop-hero"
+      className="h-screen min-h-[700px] max-h-[900px] bg-mobile-hero bg-no-repeat bg-cover bg-[40%_50%] container-px pt-36 text-center text-white sm:pt-44 md:min-h-[800px] md:bg-tablet-hero md:pt-56 xl:bg-desktop-hero"
     >
       <motion.div variants={fadeDown}>
         <h1 className="text-4xl sm:text-[40px] md:text-5xl md:leading-[56px] lg:text-6xl lg:leading-[68px] xl:text-7xl xl:leading-[78px]">

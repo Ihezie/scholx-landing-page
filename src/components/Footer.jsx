@@ -10,7 +10,7 @@ const Footer = () => {
       viewport={{ once: true }}
       initial="hide"
       whileInView="show"
-      className="bg-french_blue container-px xl:section-mt text-center text-white pt-8 pb-4"
+      className="bg-french_blue container-px text-center text-white pt-8 pb-4"
     >
       <div className="logo mb-9">SCHOLX</div>
       <section className="flex flex-col gap-9 mb-9 lg:flex-row lg:justify-center lg:gap-[20%]">

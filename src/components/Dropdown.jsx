@@ -67,7 +67,9 @@ const Dropdown = ({ setShowDropdown }) => {
           {navLinks.map((link) => (
             <motion.li
               onClick={() => {
-                setShowDropdown(false);
+                setTimeout(() => {
+                  setShowDropdown(false);
+                }, 1000);
               }}
               className="relative"
               variants={child}

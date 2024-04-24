@@ -1,4 +1,3 @@
-// import star from "../assets/icons/star.svg";
 import { fadeUp, viewPortOptions } from "../framer-variants";
 import { motion, AnimatePresence } from "framer-motion";
 import { productBenefits } from "../data";
@@ -7,17 +6,24 @@ import { useState, useEffect } from "react";
 const Benefits = () => {
   const [currentTab, setCurrentTab] = useState(0);
   return (
-    <motion.section className="container-px section-mt relative">
+    <motion.section
+      id="benefits"
+      initial="hide"
+      whileInView="show"
+      className="container-px section-top-spacing relative"
+    >
       <motion.h2
-        initial="hide"
-        whileInView="show"
-        variants={fadeUp}
         viewport={viewPortOptions}
+        variants={fadeUp}
         className="capitalize text-center"
       >
         Benefits
       </motion.h2>
-      <div className="flex relative">
+      <motion.div
+        variants={fadeUp}
+        viewport={viewPortOptions}
+        className="flex relative"
+      >
         {productBenefits.map(({ title }, index) => (
           <button
             type="button"
@@ -37,7 +43,7 @@ const Benefits = () => {
             currentTab === 1 ? "translate-x-full" : ""
           }`}
         ></div>
-      </div>
+      </motion.div>
       <motion.section className="mt-10">
         {productBenefits[currentTab].benefits.map((item, index) => (
           <SingleBenefit
@@ -79,10 +85,16 @@ const SingleBenefit = ({ benefit, details, index, currentTab }) => {
     if (index === 0) {
       setDetailsAreVisible(true);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTab]);
   return (
-    <motion.article className="border-b border-gray-300 transition-none">
+    <motion.article
+      initial="hide"
+      whileInView="show"
+      variants={fadeUp}
+      viewport={viewPortOptions}
+      className="border-b border-gray-300 transition-none"
+    >
       <div
         onClick={() => {
           setDetailsAreVisible(!detailsAreVisible);

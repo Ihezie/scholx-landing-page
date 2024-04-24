@@ -12,7 +12,7 @@ const About = () => {
       transition={{
         staggerChildren: 0.4,
       }}
-      className="text-center section-mt relative container-px"
+      className="text-center section-top-spacing relative container-px"
     >
       <motion.h2 variants={fadeUp}>About Us</motion.h2>
       <motion.p variants={fadeUp}>
