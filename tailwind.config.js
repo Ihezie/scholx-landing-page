@@ -24,7 +24,8 @@ export default {
           800: "#8ecaf5",
           900: "#c7e5fa",
         },
-        "cta-red": "#E6042C",
+        rojo: "#E6042C",
+        "alice-blue": "#ECF6FD",
       },
       fontFamily: {
         belanosima: ["Belanosima", "sans-serif"],

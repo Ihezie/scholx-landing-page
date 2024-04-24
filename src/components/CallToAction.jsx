@@ -15,14 +15,17 @@ const CallToAction = () => {
     }
   };
   return (
-    <motion.section id="sign up" className="container-px text-center section-mt bg-black text-white py-8 md:py-16 xl:mx-48 xl:rounded-[45px] xl:px-16">
+    <motion.section
+      id="sign up"
+      className="container-px text-center section-mt bg-black text-white py-8 md:py-16 xl:mx-[18%] xl:rounded-[45px] xl:px-16"
+    >
       <h2>Be part of the future of African education</h2>
       <section className="flex flex-col gap-8 md:flex-row md:justify-center md:gap-[15%] md:mt-14">
-        <div >
+        <div>
           <h3 className="mb-4 italic">Are you a lecturer?</h3>
           <button
             type="button"
-            className="btn bg-cta-red text-white w-[250px] sm:w-[270px] lg:w-72 xl:w-[310px]"
+            className="btn bg-rojo text-white w-[250px] sm:w-[270px] lg:w-72 xl:w-[310px]"
           >
             Sign Up for Early Access
           </button>
@@ -58,7 +61,7 @@ const CallToAction = () => {
           }}
         />
         <button
-          className="btn bg-cta-red mt-8 sm:absolute sm:right-0 sm:top-0 sm:mt-0 sm:h-full"
+          className="btn bg-rojo mt-8 sm:absolute sm:right-0 sm:top-0 sm:mt-0 sm:h-full"
           type="submit"
         >
           Submit
