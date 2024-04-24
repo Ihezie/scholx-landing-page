@@ -7,9 +7,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- Reexamine DROPDOWN!!!
-<!-- - Add icon attribution -->
 - Properly understand throttled function from [johnkavanagh](https://johnkavanagh.co.uk/articles/throttling-scroll-events-in-javascript/)
-- Fix section headers being blocked out when navigating to them using the navbar
 - Email input focus outline
 - Scrolling bug when I click on link on mobile
