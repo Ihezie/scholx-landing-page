@@ -31,6 +31,16 @@ export default {
         belanosima: ["Belanosima", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
       },
+      animation: {
+        jiggle: "jiggle .1s linear 2",
+      },
+      keyframes: {
+        jiggle: {
+          "0%, 100%": {transform: "translateX(0)"},
+          "25%": {transform: "translateX(5%)"},
+          "75%": {transform: "translateX(-5%)"}
+        },
+      },
     },
   },
   plugins: [],
