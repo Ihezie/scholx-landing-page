@@ -55,25 +55,6 @@ const Benefits = () => {
           />
         ))}
       </motion.section>
-
-      {/* <ul className="flex flex-col gap-5">
-        {[].map(({ benefit, details }, index) => (
-          <motion.li
-            initial="hide"
-            whileInView="show"
-            variants={fadeUp}
-            viewport={viewPortOptions}
-            key={index}
-            className="flex items-start gap-3"
-          >
-            <img src={star} alt="*" />
-            <article>
-              <h3 className="">{benefit}</h3>
-              <p>{details}</p>
-            </article>
-          </motion.li>
-        ))}
-      </ul> */}
     </motion.section>
   );
 };
