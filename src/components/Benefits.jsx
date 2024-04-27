@@ -76,34 +76,39 @@ const SingleBenefit = ({ benefit, details, index, currentTab }) => {
       viewport={viewPortOptions}
       className="border-b border-gray-300 transition-none"
     >
-      <div
+      <header
         onClick={() => {
           setDetailsAreVisible(!detailsAreVisible);
         }}
-        className="flex justify-between items-center py-5 cursor-pointer transition-none group relative group"
       >
-        <h3 className="w-4/5 group-hover:text-french_blue transition-colors duration-300">
-          {benefit}
-        </h3>
         <button
           type="button"
-          className={`size-10 absolute right-0 flex justify-center items-center rounded-full group-hover:bg-alice-blue transition-all duration-300 ${
-            detailsAreVisible ? "rotate-180" : ""
-          }`}
+          aria-expanded={detailsAreVisible}
+          aria-label="open accordion"
+          className="flex w-full items-center py-5 text-left group relative"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            id="Isolation_Mode"
-            data-name="Isolation Mode"
-            viewBox="0 0 24 24"
-            width="512"
-            height="512"
-            className="size-5 fill-french_blue"
+          <h3 className="w-4/5 group-hover:text-french_blue transition-colors duration-300">
+            {benefit}
+          </h3>
+          <div
+            className={`size-10 absolute right-0 flex justify-center items-center rounded-full group-hover:bg-alice-blue transition-all duration-300 ${
+              detailsAreVisible ? "rotate-180" : ""
+            }`}
           >
-            <path d="M0,8.057l9.52,9.507a3.507,3.507,0,0,0,4.948,0L24,8.046,21.879,5.929l-9.531,9.517a.5.5,0,0,1-.707,0L2.121,5.94Z" />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Isolation_Mode"
+              data-name="Isolation Mode"
+              viewBox="0 0 24 24"
+              width="512"
+              height="512"
+              className="size-5 fill-french_blue"
+            >
+              <path d="M0,8.057l9.52,9.507a3.507,3.507,0,0,0,4.948,0L24,8.046,21.879,5.929l-9.531,9.517a.5.5,0,0,1-.707,0L2.121,5.94Z" />
+            </svg>
+          </div>
         </button>
-      </div>
+      </header>
       <AnimatePresence>
         {detailsAreVisible && (
           <motion.div

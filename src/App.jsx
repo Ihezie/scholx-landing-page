@@ -6,9 +6,10 @@ import KeyFeatures from "./components/KeyFeatures";
 import Benefits from "./components/Benefits";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
+import { MotionConfig } from "framer-motion";
 function App() {
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <Header />
       <Hero />
       <About />
@@ -16,7 +17,7 @@ function App() {
       <Benefits/>
       <CallToAction />
       <Footer />
-    </>
+    </MotionConfig>
   );
 }
 

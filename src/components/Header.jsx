@@ -1,8 +1,7 @@
-import { AnimatePresence } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import Dropdown from "./Dropdown";
 import { navLinks } from "../data";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { fadeDown } from "../framer-variants";
 import scholxLogoWhite from "../assets/logos/scholx-logo-white.png";
 import scholxLogoBlue from "../assets/logos/scholx-logo-blue.png";
@@ -49,9 +48,7 @@ const Header = () => {
         initial="hide"
         animate="show"
         className={`w-full container-px group z-50 py-1.5 ${headerStyles} ${
-          showDropdown
-            ? "!fixed !bg-transparent !shadow-none mt-5"
-            : ""
+          showDropdown ? "!fixed !bg-transparent !shadow-none mt-5" : ""
         }`}
       >
         <img
@@ -75,15 +72,17 @@ const Header = () => {
                 </a>
               </li>
             ))}
-            <img
-              src={
-                headerStyles === "fixed-header"
-                  ? scholxLogoBlue
-                  : scholxLogoWhite
-              }
-              alt="Scholx logo"
-              className="w-28"
-            />
+            <li>
+              <img
+                src={
+                  headerStyles === "fixed-header"
+                    ? scholxLogoBlue
+                    : scholxLogoWhite
+                }
+                alt="Scholx logo"
+                className="w-28"
+              />
+            </li>
             {navLinks.slice(2).map((link) => (
               <li key={link} className="relative">
                 <a
@@ -97,6 +96,7 @@ const Header = () => {
           </ul>
         </nav>
         <button
+          aria-label="menu button"
           type="button"
           className="max-[320px]:right-3 block absolute right-7 top-1/2 -translate-y-1/2 sm:right-12 md:hidden overflow-hidden"
           onClick={() => {
@@ -126,5 +126,3 @@ const Header = () => {
   );
 };
 export default Header;
-
-// Give Header white background when user scrolls past a certain point.

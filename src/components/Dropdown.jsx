@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Dropdown = ({ setShowDropdown }) => {
   const container = {
     show: {
-      height: "auto",
+      scaleY: 1,
       transition: {
         type: "tween",
         staggerChildren: 0.1,
@@ -15,7 +15,7 @@ const Dropdown = ({ setShowDropdown }) => {
       transition: {
         type: "tween",
       },
-      height: 0,
+      scaleY: 0,
     },
   };
   const child = {
