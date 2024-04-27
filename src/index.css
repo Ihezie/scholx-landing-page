@@ -34,7 +34,7 @@
   }
   /* The margins and paddings are applied in this manner to prevent the header from blocking out section headings */
   .section-top-spacing {
-    @apply mt-7 pt-[88px] xl:mt-12 xl:pt-[96px]; 
+    @apply mt-6 pt-[92px] xl:mt-12 xl:pt-[120px]; 
   }
   .animated-underline {
     @apply after:content-[''] after:bg-white after:h-[3px] after:border-white after:w-2/3 after:absolute after:rounded after:left-1/2 after:bottom-[-5px] after:translate-x-[-50%] after:scale-x-0 hover:after:scale-x-100 after:my-transition after:group-[.fixed-header]:bg-french_blue lg:after:block;
