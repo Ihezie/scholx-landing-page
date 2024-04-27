@@ -1,6 +1,5 @@
 import { navLinks } from "../data";
 import { motion } from "framer-motion";
-import closeIcon from "../assets/icons/cross.svg";
 
 const Dropdown = ({ setShowDropdown }) => {
   const container = {
@@ -47,23 +46,9 @@ const Dropdown = ({ setShowDropdown }) => {
         initial="hide"
         animate="show"
         exit="hide"
-        className="fixed bg-french_blue z-50 w-full rounded-b-[30px] origin-top md:hidden"
+        className="fixed bg-french_blue z-40 w-full rounded-b-[30px] origin-top md:hidden"
       >
-        <motion.header
-          variants={child}
-          className="relative flex justify-center mt-12 mb-8"
-        >
-          <div className="logo">SCHOLX</div>
-          <button
-            onClick={() => {
-              setShowDropdown(false);
-            }}
-            className="max-[320px]:right-3 block absolute right-7 top-1/2 -translate-y-1/2 sm:right-12"
-          >
-            <img className="w-5" src={closeIcon} alt="close-icon" />
-          </button>
-        </motion.header>
-        <ul className="capitalize text-white font-medium flex flex-col gap-3 items-center mb-6">
+        <ul className="capitalize mt-32 sm:mt-36 text-white font-medium flex flex-col gap-3 items-center mb-6">
           {navLinks.map((link) => (
             <motion.li
               onClick={() => {

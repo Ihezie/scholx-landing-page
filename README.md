@@ -1,12 +1,7 @@
-# React + Vite
+# Scholx Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple landing page introducing users to the features, functionalities and goals of the Scholx platform - a class management system for university students. The website features a clean and interactive user-interface, elevated by simple but elegant animations. It is fully responsive on a broad range of devices, and adheres to all important web standards, including accessibility.
 
 - Properly understand throttled function from [johnkavanagh](https://johnkavanagh.co.uk/articles/throttling-scroll-events-in-javascript/)
-- Email input focus outline
-- Scrolling bug when I click on link on mobile

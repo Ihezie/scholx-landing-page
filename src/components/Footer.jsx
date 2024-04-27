@@ -2,6 +2,7 @@ import { fadeIn } from "../framer-variants";
 import { motion } from "framer-motion";
 import phoneIcon from "../assets/icons/phone-flip.svg";
 import envelope from "../assets/icons/envelope.svg";
+import scholxLogoWhite from "../assets/logos/scholx-logo-white.png";
 
 const Footer = () => {
   return (
@@ -12,7 +13,11 @@ const Footer = () => {
       whileInView="show"
       className="bg-french_blue container-px text-center text-white pt-8 pb-4 mt-28 xl:mt-36"
     >
-      <div className="logo mb-9">SCHOLX</div>
+      <img
+        className="w-28 mx-auto mb-9"
+        src={scholxLogoWhite}
+        alt="Scholx logo"
+      />
       <section className="flex flex-col gap-9 mb-9 lg:flex-row lg:justify-center lg:gap-[20%]">
         <div>
           <h3 className="lg:mb-2">Security & Privacy:</h3>

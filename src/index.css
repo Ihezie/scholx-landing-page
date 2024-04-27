@@ -32,9 +32,6 @@
   }
 }
 @layer components {
-  .logo {
-    @apply font-belanosima group-[.fixed-header]:text-black text-white text-3xl md:text-4xl xl:text-5xl;
-  }
   .container-px {
     @apply max-[320px]:px-3 px-7 sm:px-12 md:px-16 lg:px-28 xl:px-[18%];
   }
@@ -49,7 +46,7 @@
     @apply font-belanosima py-3 px-11 rounded-full hover:scale-110 my-transition xl:px-14;
   }
   .fixed-header {
-    @apply fixed top-0 bg-white text-black py-6 shadow-lg;
+    @apply fixed top-0 bg-white shadow-lg;
   }
 }
 @layer utilities {
