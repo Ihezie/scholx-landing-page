@@ -55,3 +55,8 @@ const Footer = () => {
   );
 };
 export default Footer;
+
+
+// https://www.instagram.com/scholx.ng?igsh=MTZzbTNpc3Iyczhhcg%3D%3D&utm_source=qr
+
+// https://x.com/ScholX_ng/
